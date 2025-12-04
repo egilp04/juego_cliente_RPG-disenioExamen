@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Juego cliente</title>
+    <link rel="icon" type="image/x-icon" href="./src/assests/icons/game.ico" />
+    <link rel="stylesheet" href="styles.css" />
+    <script src="./src/main.js" type="module" defer></script>
+    <script src="https://cdn.jsdelivr.net/npm/canvas-confetti@1.9.3/dist/confetti.browser.min.js"></script>
+  </head>
+  <body>
+    <header>
+      <h1 class="title" id="title"></h1>
+    </header>
+    <main>
+      <section id="seccion-1" class="seccion seccion-1">
+        <div class="jugador-info-container jugador-tarjeta">
+          <div class="datos-jugador-container">
+            <div class="imagen-jugador-container">
+              <img class="imagen-jugador-seccion-1" alt="imagen del jugador" />
+            </div>
+            <div class="nombre-jugador-container-seccion-1"><h2></h2></div>
+          </div>
+          <div class="estadisticas-container">
+            <div class="ataque-container">
+              <span>ATAQUE</span
+              ><span class="ataque-valor valor-seccion-1"></span>
+            </div>
+            <div class="defensa-container">
+              <span>DEFENSA</span
+              ><span class="defensa-valor valor-seccion-1"></span>
+            </div>
+            <div class="vida-container">
+              <span>VIDA</span><span class="vida-valor valor-seccion-1"></span>
+            </div>
+            <div class="puntos-container">
+              <span>PUNTOS</span
+              ><span class="puntos-valor valor-seccion-1"></span>
+            </div>
+          </div>
+        </div>
+        <div>
+          <button type="button" class="continuar boton-continuar-1">
+            Continuar
+          </button>
+        </div>
+      </section>
+      <section id="seccion-2" class="seccion seccion-2">
+        <div class="mercado-container"></div>
+        <div>
+          <button type="button" class="continuar boton-continuar-2">
+            Continuar
+          </button>
+        </div>
+      </section>
+      <section id="seccion-3" class="seccion seccion-3">
+        <div class="jugador-info-container jugador-tarjeta">
+          <div class="datos-jugador-container">
+            <div class="imagen-jugador-container">
+              <img class="imagen-jugador-seccion-3" alt="imagen del jugador" />
+            </div>
+            <div class="nombre-jugador-container-seccion-3"><h2></h2></div>
+          </div>
+          <div class="estadisticas-container">
+            <div class="ataque-container">
+              <span>ATAQUE</span
+              ><span class="ataque-valor valor-seccion-3"></span>
+            </div>
+            <div class="defensa-container">
+              <span>DEFENSA</span
+              ><span class="defensa-valor valor-seccion-3"></span>
+            </div>
+            <div class="vida-container">
+              <span>VIDA</span><span class="vida-valor valor-seccion-3"></span>
+            </div>
+            <div class="puntos-container">
+              <span>PUNTOS</span
+              ><span class="puntos-valor valor-seccion-3"></span>
+            </div>
+          </div>
+        </div>
+        <div>
+          <button type="button" class="continuar boton-continuar-3">
+            Continuar
+          </button>
+        </div>
+      </section>
+      <section id="seccion-4" class="seccion seccion-4">
+        <div class="enemigos-container"></div>
+        <div>
+          <button type="button" class="continuar boton-continuar-4">
+            Continuar
+          </button>
+        </div>
+      </section>
+      <section id="seccion-5" class="seccion seccion-5">
+        <div class="batalla-container">
+          <div class="jugador-imagen-container jugador-tarjeta">
+            <img class="jugador-imagen" />
+          </div>
+          <span class="batalla-vs">VS</span>
+          <div class="enemigo-imagen-container enemigo-tarjeta">
+            <img class="enemigo-imagen" />
+          </div>
+        </div>
+        <div class="resultados-container">
+          <h2></h2>
+          <p></p>
+        </div>
+        <div class="resumen-batallas"></div>
+        <div>
+          <button type="button" class="continuar boton-continuar-4">
+            Continuar
+          </button>
+        </div>
+      </section>
+      <section id="seccion-6" class="seccion seccion-6">
+        <div class="ranking-container">
+          <span class="ranking-data"></span>
+          <span class="puntuacion-data"></span>
+        </div>
+        <div>
+          <button type="button" class="reiniciar boton-reiniciar" disabled>
+            Reiniciar
+          </button>
+        </div>
+        <div class="loser" hidden><p class="loser-icon">😭</p></div>
+      </section>
+    </main>
+    <footer>
+      <div class="casilla-1 casilla"></div>
+      <div class="casilla-2 casilla"></div>
+      <div class="casilla-3 casilla"></div>
+      <div class="casilla-4 casilla"></div>
+      <div class="casilla-5 casilla"></div>
+      <div class="casilla-6 casilla"></div>
+    </footer>
+  </body>
+</html>
